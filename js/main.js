@@ -45,7 +45,7 @@ $(function () {
         var barcodePerPage = Math.floor(pageHeight / barcodeHeight)
         var pageIndex = 0
         var renderArr = []
-        debugger
+
         while (pageIndex < inputArr.length) {
             renderArr.push(inputArr.slice(pageIndex, pageIndex + barcodePerPage))
             pageIndex += barcodePerPage
@@ -72,10 +72,10 @@ $(function () {
         var page = $('.page')
         if (panel.is(':visible')) {
             panel.hide()
-            page.addClass('.page--no-border')
+            page.addClass('page--no-border')
         } else {
             panel.show()
-            page.removeClass('.page--no-border')
+            page.removeClass('page--no-border')
         }
     })
     $('#reset').on('click', function () {
