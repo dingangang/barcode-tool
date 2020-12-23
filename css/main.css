@@ -1,0 +1,36 @@
+#trigger {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: black;
+}
+
+.panel {
+    position: absolute;
+    width: 400px;
+    left: 0;
+    top: 20px;
+}
+
+.barcode-container {
+    text-align: center;
+}
+
+.barcode-container img{
+    display: block;
+    margin: auto;
+}
+
+.form-controller {
+    margin-bottom: 10px;
+}
+
+.page {
+    border: 1px solid #000;
+}
+.page.page--no-border {
+    border-color: transparent;
+}

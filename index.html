@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>长泰条码生成系统</title>
+</head>
+<body>
+<div id="trigger"></div>
+<div class="panel">
+    <form id="form">
+        <textarea name="input" id="input-barcode" cols="30" rows="10"></textarea>
+        <div class="form-controller">
+            <label>条码类型：</label>
+            <select name="type" id="barcode-type">
+                <option value="CODE128A" checked>CODE128A</option>
+                <option value="CODE128B">CODE128B</option>
+                <option value="CODE128C">CODE128C</option>
+            </select>
+        </div>
+        <div class="form-controller">
+            <label>条码高度：</label>
+            <input name="height" type="number" id="barcode-height">
+        </div>
+        <div class="form-controller">
+            <label>单柱宽度：</label>
+            <input name="width" type="number" id="barcode-width">
+        </div>
+        <div class="form-controller">
+            <label>页面高度：</label>
+            <input name="width" type="number" id="page-height">
+        </div>
+    </form>
+    <div>
+        <button id="submit">确认</button>
+        <button id="reset">清空</button>
+    </div>
+
+</div>
+<div class="barcode-container"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/JsBarcode.all.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
